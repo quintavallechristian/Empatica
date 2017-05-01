@@ -8,10 +8,12 @@ from .serializers import *
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from django.template import loader
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Home")
+    template = loader.get_template('index.html')
+    return HttpResponse(template.render(request))
 
 class DataList(APIView):
     def get(self, request):
