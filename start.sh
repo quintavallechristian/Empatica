@@ -1,0 +1,1 @@
+exec python Server/dashboard/manage.py runserver
