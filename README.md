@@ -1,4 +1,4 @@
-# Empatica
+# Empatica dashboard
 In order to set everything up to run the dashboard you need to follow these simple steps.
 
 Requirements
