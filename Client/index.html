@@ -33,11 +33,11 @@
 					<div layout="column" flex="70">
 						<div layout="row" class="height100perc">
 							<div layout="column" flex="30" ng-hide="$mdMedia('gt-sm')" layout-align="center center" class="pad7t">
-								<md-button ng-click="hCtrl.toggleSidenav()">
+								<md-button ng-click="hCtrl.toggleSidenav()" aria-label="toggle sidenav">
 								 	<i class="whiteTxt size-30 icon-bars"></i>
 								</md-button>
 							</div>
-							<div layout="column" id="logoContainer" flex="70">
+							<div layout="column" id="logoContainer" flex="70" aria-label="logo empatica">
 							</div>
 							
 						</div>
@@ -129,21 +129,25 @@
 							<div layout="column" flex="25" layout-align="center center">
 								 <md-button class="md-fab pad5t lightBlueBg" ng-click="hCtrl.filterTime('morning')">
 								 	<i class="size-30 icon-sunrise"></i>
+								 	<md-tooltip md-direction="top" md-delay="100" aria-label="select morning downloads">Select morning downloads</md-tooltip>
 								 </md-button>
 							</div>
 							<div layout="column" flex="25" layout-align="center center">
 								 <md-button class="md-fab pad5t yellowBg" ng-click="hCtrl.filterTime('afternoon')">
 								 	<i class="size-30 icon-sun"></i>
+								 	<md-tooltip md-direction="top" md-delay="100" aria-label="select afternon downloads">Select afternoon downloads</md-tooltip>
 								 </md-button>
 							</div>
 							<div layout="column" flex="25" layout-align="center center">
 								 <md-button class="md-fab pad5t blueBg" ng-click="hCtrl.filterTime('evening')">
 								 	<i class="size-30 icon-moon"></i>
+								 	<md-tooltip md-direction="top" md-delay="100" aria-label="select evening downloads">Select evening downloads</md-tooltip>
 								 </md-button>
 							</div>
 							<div layout="column" flex="25" layout-align="center center">
 								 <md-button class="md-fab pad5t darkBlueBg" ng-click="hCtrl.filterTime('night')">
 								 	<i class="size-30 icon-moon-black"></i>
+								 	<md-tooltip md-direction="top" md-delay="100" aria-label="select night downloads">Select night downloads</md-tooltip>
 								 </md-button>
 							</div>
 						</div>
