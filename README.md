@@ -20,4 +20,4 @@ Otherwise, move to the folder  "Dashboard/Server/dashboard" and from the command
 
     python manage.py runserver
 
-Click on the index.html file contained in the folder Dashboard/Client
+Click on the index.html file contained in the folder "Dashboard/Client" to access the dashboard
